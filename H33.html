@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+  <body> 
+    <title>HTML Form</title>
+    
+    <form id="myForm" method="post">
+      <fieldset>
+        <legend>Введіть ваші дані </legend>
+        <label for="name">Введіть ваше ім'я
+          <input type="text" name="name" id="name" required>
+        </label>
+
+        <label for="surname">Введіть ваше прізвище
+          <input type="text" name="surname" id="surname" required>
+        </label>
+
+        <label for="birth">Введіть вашу дату народження
+          <input type="date" name="birth" id="birth" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Введіть вашу стать</legend>
+        <label for="gender1"> чоловік 
+          <input type="radio" name="gender" id="gender1" value="male">
+        </label>
+
+        <label for="gender2"> жінка
+          <input type="radio" name="gender" id="gender2" value="female">
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Введіть ваше місце проживання </legend>
+        <label for="city">Choose a city:
+          <select id="city" name="city" required>
+            <option value="ternopyl">Ternopyl</option>
+            <option value="lviv">Lviv</option>
+            <option value="kyiv">Kyiv</option>
+            <option value="odessa">Odessa</option>
+          </select>
+        </label>
+
+        <label for="adress">Введіть адресу
+          <textarea placeholder="adress" id="adress" required></textarea>
+        </label>
+
+        <label for="languages">Введіть мови, якими володієте
+          <label for="languages1">Англійська
+            <input type="checkbox" name="languages" id="languages1">
+          </label>
+
+          <label for="languages2">Німецька
+            <input type="checkbox" name="languages" id="languages2">
+          </label>
+
+          <label for="languages3">Іспанська
+            <input type="checkbox" name="languages" id="languages3">
+          </label>
+        </label>
+      </fieldset>
+      
+      <input type="submit" value="Submit" id="submit">
+    </form>
+    <script src="H33.js"></script>
+  </body>
+</html>
